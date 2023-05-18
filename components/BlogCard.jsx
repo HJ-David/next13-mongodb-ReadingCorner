@@ -69,7 +69,7 @@ const BlogCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
       </div>
       <Link href={`/single-blog?id=${post._id}`}>
         <p className='my-4 font-satoshi text-sm text-gray-700'>
-          {post.content.split(" ").slice(0, 15).join(" ")}
+          {post.content.split(" ").slice(0, 30).join(" ")}
         </p>
       </Link>
       <p
