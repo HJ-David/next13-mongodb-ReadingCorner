@@ -1,13 +1,13 @@
 import { Schema, model, models } from 'mongoose';
 
 const BlogSchema = new Schema({
-  title: {
-    type: String,
-    required: [true, "Title is required."],
-  },
   creator: {
     type: Schema.Types.ObjectId,
     ref: "User",
+  },
+  title: {
+    type: String,
+    required: [true, "Title is required."],
   },
   content: {
     type: String,
@@ -20,7 +20,7 @@ const BlogSchema = new Schema({
   createdAt: {
     type: Date,
     default: Date.now,
-  }
+  },
 });
 
 const Blog = models.Blog || model('Blog', BlogSchema);
