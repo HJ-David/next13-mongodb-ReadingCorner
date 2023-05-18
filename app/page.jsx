@@ -11,7 +11,8 @@ const Home = () => (
       </span>
     </h1>
     <p className='mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl text-center'>
-      You can find short stories and interesting information texts that fit your level. Gradually, you can move up to a higher level.
+      You can find short interesting stories that fit your level. Gradually, you
+      can move up to a higher level.
     </p>
 
     <Feed />
